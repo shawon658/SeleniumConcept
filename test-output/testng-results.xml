@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-06T18:34:44 EDT" name="Default suite" finished-at="2023-04-06T18:34:48 EDT" duration-ms="4099">
+    <groups>
+    </groups>
+    <test started-at="2023-04-06T18:34:44 EDT" name="Default test" finished-at="2023-04-06T18:34:48 EDT" duration-ms="4099">
+      <class name="seleniumConcept.Execution">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:seleniumConcept.Execution@35ef1869]" started-at="2023-04-06T18:34:44 EDT" name="openBrowser" finished-at="2023-04-06T18:34:45 EDT" duration-ms="1276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="executionMethod()[pri:0, instance:seleniumConcept.Execution@35ef1869]" started-at="2023-04-06T18:34:45 EDT" name="executionMethod" finished-at="2023-04-06T18:34:46 EDT" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executionMethod -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:seleniumConcept.Execution@35ef1869]" started-at="2023-04-06T18:34:46 EDT" name="closeBrowser" finished-at="2023-04-06T18:34:48 EDT" duration-ms="2159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- seleniumConcept.Execution -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

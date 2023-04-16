@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ContextClick {
+public class DragAndDrop {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
@@ -18,29 +18,22 @@ public class ContextClick {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html");
+		driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
 		
-		WebElement rightClick = driver.findElement(By.xpath("//span[text()='right click me']"));
-		WebElement copyXpath = driver.findElement(By.xpath("//span[text()='Copy']"));
+		Thread.sleep(3000L);
+		
+		WebElement positionXpath = driver.findElement(By.xpath("//div[@id='box5']"));
+		WebElement destinationXpath = driver.findElement(By.xpath("//div[@id='box106']"));
 		
 		Actions act = new Actions(driver);
 		
-		act.contextClick(rightClick).perform();
 		Thread.sleep(3000L);
-		copyXpath.click();
 		
-		Thread.sleep(2000L);
+		act.clickAndHold(positionXpath).moveToElement(destinationXpath).release().perform();
 		
-		
-		System.out.println(driver.switchTo().alert().getText());
-		
-		Thread.sleep(2000L);
-		
-		driver.switchTo().alert().accept();	
-		Thread.sleep(5000L);
-		
+	
+		Thread.sleep(3000L);
 		driver.close();
-		
 
 	}
 
